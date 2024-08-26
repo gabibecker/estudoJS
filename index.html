@@ -6,12 +6,31 @@
     <!-- ajustar o viewPort para o tamanho da tela do celular-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu HTML</title>
+    <!--style - onde coloca o css dentro do html-->
+    <style>
+        /* selecionando uma tag */
+        h1 {
+           background: red; 
+        }
+        p {
+            background: blue;
+        }
+        /* selecionando um id */
+        #cabecalho-dois {
+            background: purple;
+        } 
+        /* selecionando uma classe */
+        .fundo-vermelho {
+            background: brown;
+        }
+    </style>
 </head>
 <body>
     <!-- H1 titulo/cabeçalho-->
-    <h1>Meu HTML</h1><br>
+    <h1 id="cabecalho-um" class = "fundo-vermelho borde-esquerda">Meu HTML</h1><br>
+    <h1 id="cabecalho-dois" class = "fundo-vermelho">Meu HTML</h1><br>
     <!-- br - quebra de linha-->
-    <!--p - paragrafo/ lorem - gerar texto aleatorio-->
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, neque adipisci incidunt aperiam tempora numquam harum sapiente quos, qui libero reiciendis reprehenderit necessitatibus placeat facilis, perspiciatis odit sit iusto sed!</p>
+    <!--p - paragrafo/ lorem - gerar texto aleatorio/ b - bold-->
+    <p><b> ipsum dolor sit amet consectetur adipisicing elit. Suscipit, neque adipisci incidunt aperiam tempora numquam harum sapiente quos, qui libero reiciendis reprehenderit necessitatibus placeat facilis, perspiciatis odit sit iusto sed!</b></p>
 </body>
 </html>
