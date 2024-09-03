@@ -1,23 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .img{
+            width: 100;
+            height: 200;
+        }
+
+        .span{
+            font-size: 24px;
+            color: pink
+        }
+    </style>
 </head>
 <body>
-    <!-- titulos e subtitulos/cabeçalhos/ hierarquia/ importância-->
-    <h1>Meu título</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam facilis sapiente odit blanditiis consequuntur! Adipisci accusantium perferendis labore facere ea, animi consequuntur qui commodi? Similique error debitis quo ullam voluptas!</p>
-    <h2>Meu título</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam facilis sapiente odit blanditiis consequuntur! Adipisci accusantium perferendis labore facere ea, animi consequuntur qui commodi? Similique error debitis quo ullam voluptas!</p>
-    <h3>Meu título</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam facilis sapiente odit blanditiis consequuntur! Adipisci accusantium perferendis labore facere ea, animi consequuntur qui commodi? Similique error debitis quo ullam voluptas!</p>
-    <h4>Meu título</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam facilis sapiente odit blanditiis consequuntur! Adipisci accusantium perferendis labore facere ea, animi consequuntur qui commodi? Similique error debitis quo ullam voluptas!</p>
-    <h5>Meu título</h5>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam facilis sapiente odit blanditiis consequuntur! Adipisci accusantium perferendis labore facere ea, animi consequuntur qui commodi? Similique error debitis quo ullam voluptas!</p>
-    <h6>Meu título</h6>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam facilis sapiente odit blanditiis consequuntur! Adipisci accusantium perferendis labore facere ea, animi consequuntur qui commodi? Similique error debitis quo ullam voluptas!</p>
+    <!-- pode colocar atributo style no h1-->
+    <h1 style>Cabeçalho</h1>
+    <!-- tag i para ficar em italico/ tag "em" para dar ênfase-->
+    <!-- tag b para ficar em negrito/ tag strong tem um significado, para colocar uma palavra no texto mais forte-->
+    <p><b><i>Lorem</i> <em>ipsum</em> dolor sit amet, consectetur adipisicing elit. Beatae soluta illo nesciunt vel saepe aliquid eaque obcaecati rem consectetur modi sapiente mollitia nulla itaque iusto optio explicabo, necessitatibus ipsum delectus!</b></p>
+    <p>
+        <!-- tag para deletar/riscar palavra errada e ins para adição de palavra-->
+        <del><small>palavra errada 2<sup>2</sup></small></del> <ins>palavra certa</ins>
+        <!-- usar s para riscar mas sme um significado- e usar u para ficar sublinhado sem significado->
+        <-- tag a para colocar um link, href é para dizer qual referencia que vai colocar-->
+        <!-- tag para ficar elevado = sup-->
+         <br>H<sub>2</sub>O
+         <!-- sub para descer o texto-->
+          <br>
+          <q cite = "https//www.google.com/">Citação aleatoria</q>
+          <!-- usado para fazer citações-->
+        <a href="https://www.google.com/" target="_blank"> amet</a>
+        <!-- tag img para adicionar imagem-->
+        <img  class = "img" src="https://th.bing.com/th/id/R.06c8f36dc5234812e832cfdcf83e0ecb?rik=WmxqhoON2eB2eQ&pid=ImgRaw&r=0" alt="gatinhos namorados" width="80" height="80"></p>
+    </p>
+
+    <hr>
+
+    <blockquote cite="https//www.google.com"><p>Aqui sim eu estou fazendo um bloco de citação.</p></blockquote>
+    <!-- linha para dividir textos = hr-->
+     <!-- tag pre usada para formatar o codigo-->
+    <pre><code>
+        using namespace std;
+        
+        int main() {
+            int n[20], i, j;
+            for(i = 0; i < 20; i++)
+                cin >> n[i];
+        
+            j = 0;
+            for(i = 19; i >= 0; i--)
+                cout << "N[" << j++ << "] = " << n[i] << endl;
+        
+            return 0;
+        } </code></pre>
+
+        <span class = "span">testando o span</span>
+
+        <br>
+        <div class = "span">div - eu sou um bloco</div>
 </body>
 </html>
